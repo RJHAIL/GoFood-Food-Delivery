@@ -9,7 +9,7 @@ const razorpay = new Razorpay({
 
 // placing user order for frontend
 const placeOrder = async (req, res) => {
-  const frontend_url = "http://localhost:5173";
+  const frontend_url = "https://gofood-delivery-website.netlify.app";
   try {
     const newOrder = new orderModel({
       userId: req.body.userId,
